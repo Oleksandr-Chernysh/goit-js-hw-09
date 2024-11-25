@@ -34,8 +34,7 @@ function handleSubmit(event) {
   localStorage.removeItem('feedback-form-state');
   formData.email = '';
   formData.message = '';
-  input.value = '';
-  textarea.value = '';
+  form.reset();
 }
 
 input.addEventListener('input', handleClickInput);
